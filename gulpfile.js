@@ -8,18 +8,18 @@ const gulp = require("gulp"),
 
 gulp.task('default', function(){
     return console.log("Gulp task complete");
-})
+});
 
 gulp.task("html", function(){
     return console.log("Compiling HTML...");
-})
+});
 
 gulp.task("styles", function(){
     console.log("Compiling CSS...");
     return gulp.src('./app/assets/styles/styles.css')
         .pipe(postcss([postcssImport, cssvars, nestedcss, autoprefixer]))
         .pipe(gulp.dest('./app/temp/styles'));
-})
+});
 
 gulp.task('watch', function () {
     watch('./app/index.html', function() {
@@ -28,5 +28,5 @@ gulp.task('watch', function () {
 
     watch('./app/assets/styles/**/*.css', function() {
         gulp.start('styles');
-    })
-})
+    });
+});
