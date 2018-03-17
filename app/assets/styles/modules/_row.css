@@ -1,34 +1,40 @@
 .row {
+   @mixin clearfix {
+   }
 
-    @mixin clearfix {};
+   &--gutters {
+      margin-right: -65px;
+   }
 
-		&--gutters {
-        margin-right: -65px;
-    }
+   &--gutters > div {
+      padding-right: 65px;
+   }
 
-    &--gutters > div {
-        padding-right: 65px;
-    }
-	
-    @mixin atMedium {
-        &__medium-4 {
-            float: left;
-            width: 33.33%;
+   &__b-margin-until-medium {
+      margin-bottom: 1rem;
+   }
 
-            &--larger {
-                width: 37%;
-            }
-        }
-    
-        &__medium-8 {
-            float: right;
-            width: 66.66%;
+   @mixin atMedium {
+      &__medium-4 {
+         float: left;
+         width: 33.33%;
 
-            &--smaller {
-                width: 63%;
-            }
-        }
-    }
+         &--larger {
+            width: 37%;
+         }
+      }
 
-    
+      &__medium-8 {
+         float: right;
+         width: 66.66%;
+
+         &--smaller {
+            width: 63%;
+         }
+      }
+
+      &__b-margin-until-medium {
+         margin-bottom: 0;
+      }
+   }
 }

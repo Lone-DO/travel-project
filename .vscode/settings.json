@@ -1,5 +1,7 @@
 {
-    "files.associations": {
-        "*.css": "scss"
-    }
+   "files.associations": {
+      "*.css": "scss"
+   },
+   "editor.formatOnSave": true,
+   "prettier.tabWidth": 3
 }
