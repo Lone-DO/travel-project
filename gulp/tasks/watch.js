@@ -5,12 +5,14 @@ const gulp = require("gulp"),
 gulp.task('watch', function () {
     browswerSync.init({
         notify: false,
+        //open: false,
         server: {
             baseDir: "app"
         }
     });
 
     watch('./app/index.html', function() {
+        console.info("HTML Changes detected...");
         browswerSync.reload();
     });
 

@@ -12,7 +12,7 @@ gulp.task("styles", function(){
         .pipe(postcss([postcssImport, mixins, cssvars, nestedcss, autoprefixer]))
         .on('error', function(errorInfo) {
             this.emit('end');
-            console.log(errorInfo.toString());
+            console.warn(errorInfo.toString());
         })
         .pipe(gulp.dest('./app/temp/styles'));
 });
