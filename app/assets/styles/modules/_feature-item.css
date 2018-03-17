@@ -3,7 +3,7 @@
    padding-left: 94px;
    padding-bottom: 2.5rem;
 
-   padding &__icon {
+   &__icon {
       position: absolute;
       left: 0;
    }
