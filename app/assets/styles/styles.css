@@ -1,16 +1,12 @@
-/****** styles.css ******/
 @import "normalize.css";
-/**_variables.css**/
+
+/****** styles.css ******/
 @import "base/_variables";
-/**_mixins.postcss**/
 @import "base/_mixins.postcss";
-/**_global.css**/
 @import "base/_global";
-/**_wrapper.css**/
+
 @import "modules/_wrapper";
-/**_wrapper.css**/
 @import "modules/_page-section";
-/**_large-hero.css**/
+@import "modules/_headline";
 @import "modules/_large-hero";
-/**_btn.css**/
 @import "modules/_btn";
