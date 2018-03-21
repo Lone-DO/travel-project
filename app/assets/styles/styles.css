@@ -5,6 +5,7 @@
 @import "base/_mixins.postcss";
 @import "base/_global";
 
+@import "modules/_sprite";
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_headline";
