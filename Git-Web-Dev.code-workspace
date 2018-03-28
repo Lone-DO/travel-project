@@ -1,12 +1,15 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"files.associations": {
-			"*.css": "scss"
-		}
-	}
+   "folders": [
+      {
+         "path": "."
+      }
+   ],
+   "settings": {
+      "files.associations": {
+         "*.css": "scss"
+      },
+      "editor.formatOnSave": true,
+      "prettier.tabWidth": 3,
+      "editor.tabSize": 3
+   }
 }
