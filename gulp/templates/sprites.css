@@ -4,11 +4,11 @@ EDIT THIS FILE INSTEAD gulp/templates/sprite */
 {{#shapes}}
    {{#first}}
       .icon {
-         background-image: url('/assets/images/sprites/{{{sprite}}}');
+         background-image: url('../../assets/images/sprites/{{{sprite}}}');
       }
 
       .no-svg .icon {
-         background-image: url('/assets/images/sprites/{{#replaceSvg2Png}}{{{sprite}}}{{/replaceSvg2Png}}');
+         background-image: url('../../assets/images/sprites/{{#replaceSvg2Png}}{{{sprite}}}{{/replaceSvg2Png}}');
       }
    {{/first}}
 
